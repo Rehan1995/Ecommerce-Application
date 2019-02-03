@@ -18,8 +18,8 @@ class Cart_Controller extends CI_Controller
 	}
 	public function update()
 	{
-		$data = $this->input->post();
-		$this->cart->update($data);
+		$updateData = $this->input->post();
+		$this->cart->update($updateData);
 		redirect(site_url() . 'Cart_Controller/', 'refresh');
 	}
 	public function delete($id)
